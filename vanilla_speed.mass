@@ -1,0 +1,39 @@
+#-------------------------------------------------
+#  Plane Vanilla Speed Wing Mass File
+#-------------------------------------------------
+#  Author: Jakob Richardson
+#  Date Created: 10/30/23
+#  Last Updated: 11/15/23
+#  Dimensional unit and parameter data.
+#  Mass for Vanilla Aircraft
+#-------------------------------------------------
+
+#-------------------------------------------------------
+# 
+#-------------------------------------------------------
+
+# rho = 0.0023769 slug/ft^3
+
+#  Names and scalings for units to be used for trim and eigenmode calculations.
+#  The Lunit and Munit values scale the mass, xyz, and inertia table data below.
+#  Lunit value will also scale all lengths and areas in the AVL input file.
+Lunit = 1 ft
+Munit = 1 slug
+Tunit = 1.0 s
+
+#------------------------- 
+#  Gravity and density to be used as default values in trim setup (saves runtime typing).
+#  Must be in the unit names given above (ft, slug, s).
+g   = 32.2
+rho = 0.0023769
+
+#-------------------------
+#  Mass & Inertia breakdown.
+#  x y z  is location of item's own CG.
+#  Ixx... are item's inertias about item's own CG.
+#
+#  x,y,z system here must be exactly the same one used in the .avl input file
+#     (same orientation, same origin location, same length units)
+#
+#  mass       x        y       z         
+   10.26      0.50     0.0     0.0      
